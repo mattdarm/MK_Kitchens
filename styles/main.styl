@@ -11,6 +11,26 @@ $footerLightBlue = #383F53
 $footerDarkBlue = #0D192E
 
 /*===============================
+ *  Shadows
+ *==============================*/
+
+$depth-1 = 0 2px 2px 0 rgba(0,0,0,0.14), 
+           0 3px 1px -2px rgba(0,0,0,0.12), 
+           0 1px 5px 0 rgba(0,0,0,0.2);
+$depth-2 = 0 4px 5px 0 rgba(0,0,0,0.14), 
+           0 1px 10px 0 rgba(0,0,0,0.12), 
+           0 2px 4px -1px rgba(0,0,0,0.3);
+$depth-3 = 0 8px 17px 2px rgba(0,0,0,0.14), 
+           0 3px 14px 2px rgba(0,0,0,0.12), 
+           0 5px 5px -3px rgba(0,0,0,0.2);
+$depth-4 = 0 16px 24px 2px rgba(0,0,0,0.14), 
+           0 6px 30px 5px rgba(0,0,0,0.12), 
+           0 8px 10px -7px rgba(0,0,0,0.2);
+$depth-5 = 0 24px 38px 3px rgba(0,0,0,0.14), 
+           0 9px 46px 8px rgba(0,0,0,0.12), 
+           0 11px 15px -7px rgba(0,0,0,0.2);
+
+/*===============================
  *  Fonts
  *==============================*/
 
@@ -68,17 +88,29 @@ $footerDarkBlue = #0D192E
   &:hover
     text-decoration: none
     border-color: $lightBlue
-    box-shadow 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    box-shadow $depth-3
   &:before
     background-color: $lightBlue
   &:active
     border-color: $white
-    box-shadow 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow $depth-1
     transition: 0.2s ease-in-out;
 
 .btn--default
   border: 2px solid $mediumBlue
   color: $mediumBlue!important
+
+.btn--link
+  font-family: 'Montserrat'!important
+  color: $mediumBlue!important
+  font-weight: 500
+  text-transform: uppercase
+  font-size: 14px
+  &:hover
+    color: $lightBlue!important
+    text-decoration: none 
+  &::before
+    border-bottom: 1px solid $lightBlue!important
 
 /******** Sections ********/
 .uk-section-primary
@@ -102,6 +134,9 @@ $footerDarkBlue = #0D192E
     font-family: 'Roboto Slab'
     font-weight: 400
     font-size: 25px
+    color $mediumBlue
+  p
+    font-family: 'Montserrat'
     color $mediumBlue
   .uk-divider-small
     &::after
@@ -156,9 +191,31 @@ footer
 a:hover
   color: $white!important
 
+/******** Cards ********/
+.uk-card-default
+  box-shadow: $depth-2!important
+  transition: box-shadow .3s ease-in-out;
+  &:hover
+    box-shadow: $depth-4!important
+    transition: box-shadow .3s ease-in-out;
+
+.uk-card-primary 
+  background: $mediumBlue!important
+  color: $white!important
+  box-shadow: $depth-2!important
+  transition: box-shadow .3s ease-in-out;
+  h3, p, a
+    color: $white!important
+  .uk-divider-small
+    &::after
+      border-top: 2px solid $white
+      border-top-color: $white!important
+  &:hover
+    box-shadow: $depth-4!important
+    transition: box-shadow .3s ease-in-out;
 
 /*===============================
- *  Header
+ *  HOME - Header
  *==============================*/
 
 /******** Navbar Section ********/
@@ -174,11 +231,11 @@ a:hover
   height 55px
 
 .header .uk-overlay-secondary
-  background: linear-gradient(45deg, rgba(80,146,255,0.3) 0%,rgba(41,137,216,0.04) 50%,rgba(41,135,213,0) 50%,rgba(38,72,127,1) 100%)
+  // background: linear-gradient(45deg, rgba(80,146,255,0.3) 0%,rgba(41,137,216,0.04) 50%,rgba(41,135,213,0) 50%,rgba(38,72,127,1) 100%)
 
 .header__navbar
   background-color rgba(255, 255, 255, 0.7)
-  box-shadow 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+  box-shadow $depth-2
   z-index: 999
 
 /******** Hero Section ********/
@@ -202,7 +259,7 @@ a:hover
       box-shadow 0 2px 0px 0px rgba(0,0,0, 1)
 
 /*===============================
- *  Intro Section
+ *  HOME - Intro Section
  *==============================*/
 
  .intro__bcg-img
@@ -213,7 +270,7 @@ a:hover
       )
       
 /*===============================
- *  2 images Section
+ *  HOME - 2 images Section
  *==============================*/
 
 .two-images__image
@@ -228,6 +285,22 @@ a:hover
     text-align: center
 
 /*===============================
- *  Contact
+ *  HOME - Contact
  *==============================*/
 
+/*===============================
+ *  GALLERY - Header
+ *==============================*/
+
+/******** Navbar Section ********/
+.header--no-home
+  height: 50vh
+  .uk-overlay-secondary
+    background: linear-gradient(45deg, rgba(80,146,255,0.3) 0%,rgba(41,137,216,0.04) 50%,rgba(41,135,213,0) 50%,rgba(38,72,127,1) 100%)
+
+.header__background--no-home
+  height: 50vh
+
+.header__hero-section--no-home
+  .uk-container
+    max-width: 400px
