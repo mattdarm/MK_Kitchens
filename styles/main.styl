@@ -232,10 +232,26 @@ a:hover
 /*===============================
  *  Mobile Menu
  *==============================*/
+.mobile-navbar__btn
+  background-color: transparent!important
+  color: $darkBlue!important
+  border: 2px solid $darkBlue
+  padding 10px
+  font-family: 'Montserrat'
+  font-weight bold
+  text-transform: uppercase
 
 .mobile-menu
   nav 
     margin 0 auto
+    color $white!important
+  .nav__menu-links
+    font-family: 'Roboto Slab'
+    color $white!important
+    &:hover
+      color: $lightBlue!important
+
+
 
 /*===============================
  *  HOME - Header
@@ -244,7 +260,7 @@ a:hover
 /******** Navbar Section ********/
 .header
   height: 100vh
-  margin-top: 80px;
+  margin-top: 80px; // max-width 960px
   &__background
     height: 100vh
     width: 100%
