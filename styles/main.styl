@@ -229,6 +229,13 @@ a:hover
   transform: scale(1.2);
   opacity: 0.5
 
+/*===============================
+ *  Mobile Menu
+ *==============================*/
+
+.mobile-menu
+  nav 
+    margin 0 auto
 
 /*===============================
  *  HOME - Header
@@ -237,6 +244,7 @@ a:hover
 /******** Navbar Section ********/
 .header
   height: 100vh
+  margin-top: 80px;
   &__background
     height: 100vh
     width: 100%
@@ -250,7 +258,7 @@ a:hover
   // background: linear-gradient(45deg, rgba(80,146,255,0.3) 0%,rgba(41,137,216,0.04) 50%,rgba(41,135,213,0) 50%,rgba(38,72,127,1) 100%)
 
 .header__navbar
-  background-color rgba(255, 255, 255, 0.7)
+  background-color rgba(255, 255, 255, 1)
   box-shadow $depth-2
   z-index: 999
   .uk-navbar-item.uk-logo
@@ -282,10 +290,10 @@ a:hover
 
  .intro__bcg-img
    .uk-overlay-primary
-      background: linear-gradient(
-        rgba($lightBlue, 0.5),
-        rgba($mediumBlue, 0.2)
-      )
+      // background: linear-gradient(
+      //   rgba($lightBlue, 0.5),
+      //   rgba($mediumBlue, 0.2)
+      // )
       
 /*===============================
  *  HOME - 2 images Section

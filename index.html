@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,44 +18,111 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js"></script>
 
 </head>
+
 <body>
-  <!-- Desktop Menu -->
-    <header class="header uk-inline">
-      <div class="uk-overflow-hidden">
-        <img src="images/slider_modern_shaker_kitchen1.jpg" alt="" class="header__background uk-animation-kenburns">
+
+  <!-- Mobile Menu - Navbar -->
+  <div id="mobile-navbar" class="mobile-navbar uk-hidden@m uk-sticky" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu">
+    <nav class="uk-navbar uk-navbar-container">
+      <div class="uk-navbar-left">
+        <a href="index.html" class="uk-navbar-item uk-logo">
+          <img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens">
+        </a>
       </div>
-      <div>
-        <div class="uk-overlay-secondary uk-position-cover">
-          <div class="header__navbar uk-position-fixed uk-position-top">
-            <div class="uk-container">
-              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-left">
-                    <a href="index.html" class="uk-navbar-item uk-logo">
-                      <img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens">
-                    </a>
-                </div>
-                <div class="uk-navbar-right">
-                  <ul class="uk-navbar-nav">
-                      <li><a href="index.html" class="btn">Home</a></li>
-                      <li><a href="gallery.html" class="btn">Gallery</a></li>
-                      <li><a href="about-us.html" class="btn">About us</a></li>
-                      <li><a href="contact.html" class="btn">Contact</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <div class="header__hero-section uk-position-center">
-            <div class="uk-section">
-              <div class="uk-container uk-text-center">
-                <h2>Modern Shaker Style</h2>
-                <hr class="uk-divider-icon">
-                <h2>Bespoke Kitchens</h2>
+      <div class="uk-navbar-right">
+        <button class="uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu">
+          <span class="uk-margin-small-right" uk-icon="icon: table"></span>Menu</button>
+      </div>
+    </nav>
+  </div>
+  <!-- END! Mobile Menu - Navbar -->
+
+  <!-- Mobile Menu - Window -->
+  <div id="modal-mobile-menu" class="mobile-menu uk-modal-full" uk-modal="sel-close; uk-modal-close">
+    <div class="uk-modal-dialog uk-modal-body uk-section-secondary uk-flex" uk-height-viewport>
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <nav>
+        <div class="uk-flex uk-flex-column">
+          <ul class="uk-nav uk-nav-center uk-nav-primary uk-margin-auto-vertical">
+            <li>
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="">Gallery</a>
+            </li>
+            <li>
+              <a href="about-us.html" class="">About us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="">Contact</a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <ul class="uk-nav-sub uk-text-left">
+              <li>
+                <a href="tel:+487846115968">
+                  <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="receiver"></span> 78 46 115 968</a>
+              </li>
+              <li>
+                <a href="mailto:info@modernshakerkitchen.co.uk">
+                  <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="mail"></span> info@modernshakerkitchen.co.uk</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank">
+                  <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="facebook"></span> MK Modern Shaker Kitchen</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- END! Mobile Menu - Window -->
+
+  <!-- Desktop Menu -->
+  <header class="header uk-inline">
+    <div class="uk-overflow-hidden">
+      <img src="images/slider_modern_shaker_kitchen1.jpg" alt="" class="header__background uk-animation-kenburns">
+    </div>
+    <div>
+      <div class="uk-overlay-secondary uk-position-cover">
+        <div class="header__navbar uk-position-fixed uk-position-top">
+          <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+              <div class="uk-navbar-left">
+                <a href="index.html" class="uk-navbar-item uk-logo">
+                  <img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens">
+                </a>
               </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a href="index.html" class="btn">Home</a>
+                  </li>
+                  <li>
+                    <a href="gallery.html" class="btn">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html" class="btn">About us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="btn">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header__hero-section uk-position-center">
+          <div class="uk-section">
+            <div class="uk-container uk-text-center">
+              <h2>Modern Shaker Style</h2>
+              <hr class="uk-divider-icon">
+              <h2>Bespoke Kitchens</h2>
             </div>
           </div>
         </div>
-    </header>
+      </div>
+  </header>
   <!-- END! Desktop Menu -->
 
   <!-- Intro Section -->
@@ -64,11 +132,14 @@
         <div class="uk-margin-large-left uk-margin-large-right intro__content">
           <h3>Modern Shaker Style</h3>
           <hr class="uk-divider-small">
-          <p>Our modern shaker style kitchens are mhand crafted and made to measure to fit perfectly in any space and suit your needs. From practical and functional to modern and luxurious, all available and custom made for you.</p>
+          <p>Our modern shaker style kitchens are mhand crafted and made to measure to fit perfectly in any space and suit your
+            needs. From practical and functional to modern and luxurious, all available and custom made for you.</p>
           <a href="about-us.html" class="btn btn--primary uk-margin-large-top">Read more</a>
         </div>
       </div>
-      <div class="uk-inline intro__bcg-img uk-background-cover" style="background-image: url(images/modern_shaker_kitchen_intro.jpg);"><div class="uk-overlay-primary uk-position-cover"></div></div>
+      <div class="uk-inline intro__bcg-img uk-background-cover" style="background-image: url(images/modern_shaker_kitchen_intro.jpg);">
+        <div class="uk-overlay-secondary uk-position-cover"></div>
+      </div>
     </div>
   </section>
   <!-- END!Intro Section -->
@@ -83,10 +154,10 @@
             <a href="gallery.html" class="btn btn--default uk-margin-xlarge-top">Watch gallery</a>
           </div>
           <div>
-            <h3>Timeless Beauty Converted <br>Into Modern Day Living </h3>
+            <h3>Timeless Beauty Converted
+              <br>Into Modern Day Living </h3>
             <hr class="uk-divider-small uk-margin-xlarge-bottom">
-            <img src="images/two_images_right.jpg" 
-            class="img--big-shadow" alt="">
+            <img src="images/two_images_right.jpg" class="img--big-shadow" alt="">
           </div>
         </div>
       </div>
@@ -107,30 +178,30 @@
           <div>
             <div class="uk-card uk-card-default uk-box-shadow-hover-large">
               <div class="uk-card-media-top">
-                  <img src="images/bespoke_1.jpg" alt="">
+                <img src="images/bespoke_1.jpg" alt="">
               </div>
               <div class="uk-card-body">
-                  <h4>EMPTY GAPS, SPACES</h4>
+                <h4>EMPTY GAPS, SPACES</h4>
               </div>
             </div>
           </div>
           <div>
             <div class="uk-card uk-card-default uk-box-shadow-hover-large">
               <div class="uk-card-media-top">
-                  <img src="images/bespoke_2.jpg" alt="">
+                <img src="images/bespoke_2.jpg" alt="">
               </div>
               <div class="uk-card-body">
-                  <h4>UNUSED PLACES</h4>
+                <h4>UNUSED PLACES</h4>
               </div>
             </div>
           </div>
           <div>
             <div class="uk-card uk-card-default uk-box-shadow-hover-large">
               <div class="uk-card-media-top">
-                  <img src="images/bespoke_3.jpg" alt="">
+                <img src="images/bespoke_3.jpg" alt="">
               </div>
               <div class="uk-card-body">
-                  <h4>AKWARD CORNERS</h4>
+                <h4>AKWARD CORNERS</h4>
               </div>
             </div>
           </div>
@@ -154,9 +225,9 @@
               </div>
               <div class="uk-width-expand">
                 <address>
-                  57 Kingsway,<br>
-                  TW197QF,<br>
-                  Stanwell, Staines
+                  57 Kingsway,
+                  <br> TW197QF,
+                  <br> Stanwell, Staines
                 </address>
               </div>
             </div>
@@ -169,7 +240,8 @@
                 <span href="" class="uk-icon-button" uk-icon="mail"></span>
               </div>
               <div class="uk-width-expand">
-                <a href="">info@modernshaker<br>kitchen.co.uk</a>
+                <a href="mailto:info@modernshakerkitchen.co.uk" class="uk-button-text">info@modernshaker
+                  <br>kitchen.co.uk</a>
               </div>
             </div>
             <div class="uk-grid-small" uk-grid>
@@ -177,7 +249,7 @@
                 <span href="" class="uk-icon-button" uk-icon="receiver"></span>
               </div>
               <div class="uk-width-expand">
-                <a href="tel:+487846115968">78 46 115 968</a>
+                <a href="tel:+487846115968" class="uk-button-text">78 46 115 968</a>
               </div>
             </div>
           </div>
@@ -189,7 +261,7 @@
                 <span href="" class="uk-icon-button" uk-icon="facebook"></span>
               </div>
               <div class="uk-width-expand">
-                <a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank">MK Modern Shaker Kitchen</a>
+                <a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank" class="uk-button-text">MK Modern Shaker Kitchen</a>
               </div>
             </div>
           </div>
@@ -212,10 +284,14 @@
       <div class="uk-container">
         <div class="uk-grid" uk-grid>
           <div class="uk-width-expand">
-            <span>Modern Shaker Kitchens - 2018 | <a href="#">Terms And Conditions</a></span>
+            <span>Modern Shaker Kitchens - 2018 |
+              <a href="#" class="uk-button-text">Terms And Conditions</a>
+            </span>
           </div>
           <div class="uk-width-auto uk-text-right">
-            <span><a href="#">Code & Design By MD</a></span>
+            <span>
+              <a href="#" class="uk-button-text">Code & Design By MD</a>
+            </span>
           </div>
         </div>
       </div>
@@ -224,4 +300,5 @@
   <!-- END! Footer -->
 
 </body>
+
 </html>
