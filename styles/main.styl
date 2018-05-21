@@ -40,8 +40,13 @@ $depth-img = 0px 20px 60px rgba(0,0,0, 0.6);
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700')
 
 /*===============================
- *  Typography
+ *  Media Queries
  *==============================*/
+
+$s-width = 640px 
+$m-width = 960px
+$l-width = 1200px
+$xl-width = 1600px
 
 /*===============================
  *  Global Styles
@@ -192,7 +197,7 @@ footer
     font-family: 'Montserrat'
     font-weight: 300
     font-size: 14px
-    color: $white
+    color: $white!important
 a:hover
   color: $white!important
 
@@ -260,7 +265,9 @@ a:hover
 /******** Navbar Section ********/
 .header
   height: 100vh
-  margin-top: 80px; // max-width 960px
+  margin-top: 80px;
+  @media (max-width $m-width)
+    margin-top 0
   &__background
     height: 100vh
     width: 100%
