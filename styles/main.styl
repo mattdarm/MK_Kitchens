@@ -39,6 +39,13 @@ $depth-img = 0px 20px 60px rgba(0,0,0, 0.6);
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700')
 
+
+
+// font-family: 'Avenir', Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+
+
 /*===============================
  *  Media Queries
  *==============================*/
@@ -122,6 +129,39 @@ $xl-width = 1600px
   &::before
     border-bottom: 1px solid $lightBlue!important
 
+.btn-submit
+  margin-left 0
+  text-transform: uppercase
+  color: $white!important
+  border: 2px solid $white
+  background: $mediumBlue
+  font-family: 'Montserrat'!important 
+  font-size: 18px
+  font-weight: 500
+  width: 10rem!important
+  cursor: pointer 
+  &:hover
+    text-decoration: none
+    border-color: $lightBlue
+    box-shadow $depth-3
+  &:before
+    background-color: $lightBlue
+  &:active
+    border-color: $white
+    box-shadow $depth-1
+    transition: 0.2s ease-in-out;
+
+
+.btn-submit:before
+  content ''
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $lightBlue!important
+  transform: translateX(-100%);
+  z-index: -1
 /******** Sections ********/
 .uk-section-primary
   background: $mediumBlue!important
@@ -311,8 +351,14 @@ a:hover
  *  HOME - Intro Section
  *==============================*/
 
+.intro__content-col
+  @media (max-width $s-width)
+    margin-bottom -30px!important
+
  .intro__bcg-img
-   .uk-overlay-primary
+   @media (max-width $s-width)
+     height: 350px
+  //  .uk-overlay-secondary
       // background: linear-gradient(
       //   rgba($lightBlue, 0.5),
       //   rgba($mediumBlue, 0.2)
@@ -323,7 +369,7 @@ a:hover
  *==============================*/
   
 /*===============================
- *  Bespoke Section
+ *  BHOME - espoke Section
  *==============================*/
 
 .bespoke
@@ -358,3 +404,40 @@ a:hover
  .experience
     img 
       box-shadow: $depth-img
+
+/*===============================
+ *  CONTACT - Map
+ *==============================*/
+
+.contact-us
+  address,
+  a
+    font-family: 'Montserrat'
+    font-size: 16px
+    color: $mediumBlue
+    font-weight: 500
+  a:hover
+    color: $lightBlue!important
+    line-height: 0.4
+  span.uk-icon-button
+    color: $white
+    background-color: $darkBlue
+
+
+/*===============================
+ *  CONTACT - Form
+ *==============================*/
+
+.uk-section-xlarge--remove-padding-top
+  padding-top 0!important
+
+.contact-form
+  label.uk-form-label
+    font-family: 'Montserrat'
+    font-size: 18px
+  input.uk-input,
+  textarea.uk-textarea
+    background-color: $white!important
+    color: $darkBlue!important
+    &:focus
+      border-color: $lightBlue!important
