@@ -368,13 +368,51 @@ a:hover
  *  HOME - 2 images Section
  *==============================*/
   
+.two-images
+  position: relative
+  overflow: hidden
+
+.two-images__bottom-img
+  @media (min-width $s-width)
+    position: absolute
+    right: -80px
+    top: 550px
+  @media (max-width: $l-width)
+    top: 350px
+
+.two-images__top-row
+  @media  (max-width $s-width)
+    display: flex
+
+.two-images__top-img
+  @media  (max-width $s-width)
+    order: 2
+
+.two-images__heading
+  @media  (max-width $s-width)
+    order: 1
+
+.two-images__bottom-row
+  @media  (max-width $s-width)
+    display: flex
+
+.two-images__btn
+  margin-top 70px!important
+  @media  (max-width $s-width)
+    order: 2
+
+.two-images__bottom-img
+  @media  (max-width $s-width)
+    order: 1
+
 /*===============================
- *  BHOME - espoke Section
+ *  HOME - Bespoke Section
  *==============================*/
 
 .bespoke
   .uk-card-body
     text-align: center
+    padding 30px 10px
 
 /*===============================
  *  HOME - Contact
