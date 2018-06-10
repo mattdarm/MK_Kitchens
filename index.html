@@ -80,10 +80,9 @@
 
   <!-- Desktop Menu -->
   <header class="header uk-inline">
-    <div class="uk-overflow-hidden">
+    <div class="uk-overflow-hidden" uk-scrollspy="cls: uk-animation-fade;">
       <img src="images/slider_modern_shaker_kitchen1.jpg" alt="" class="header__background uk-animation-kenburns">
     </div>
-    <div>
       <div class="uk-overlay-secondary uk-position-cover">
         <div class="header__navbar uk-position-fixed uk-position-top">
           <div class="uk-container">
@@ -115,9 +114,9 @@
         <div class="header__hero-section uk-position-center">
           <div class="uk-section">
             <div class="uk-container uk-text-center">
-              <h2>Modern Shaker Style</h2>
-              <hr class="uk-divider-icon">
-              <h2>Bespoke Kitchens</h2>
+              <h2 uk-scrollspy="cls: uk-animation-slide-top; delay: 500;">Modern Shaker Style</h2>
+              <hr uk-scrollspy="cls: uk-animation-scale-up; delay: 500;" class="uk-divider-icon">
+              <h2 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;">Bespoke Kitchens</h2>
             </div>
           </div>
         </div>
@@ -129,7 +128,7 @@
   <section class="intro">
     <div class="uk-grid uk-child-width-1-2@s " uk-grid>
       <div class="uk-section-primary uk-section-xlarge intro__content-col">
-        <div class="uk-margin-large-left uk-margin-large-right intro__content">
+        <div class="uk-margin-large-left uk-margin-large-right intro__content" uk-scrollspy="cls: uk-animation-slide-left; target: > ; delay: 700;">
           <h3>Modern Shaker Style</h3>
           <hr class="uk-divider-small">
           <p>Our modern shaker style kitchens are mhand crafted and made to measure to fit perfectly in any space and suit your
@@ -137,7 +136,7 @@
           <a href="about-us.html" class="btn btn--primary uk-margin-large-top">Read more</a>
         </div>
       </div>
-      <div class="uk-inline intro__bcg-img uk-background-cover" style="background-image: url(images/modern_shaker_kitchen_intro.jpg);">
+      <div class="uk-inline intro__bcg-img uk-background-cover" style="background-image: url(images/modern_shaker_kitchen_intro.jpg);" uk-scrollspy="cls: uk-animation-fade; delay: 500;">
         <div class="uk-overlay-secondary uk-position-cover"></div>
       </div>
     </div>
@@ -150,9 +149,9 @@
       <div class="uk-container">
         <div class="uk-grid two-images__top-row" uk-grid>
           <div class="uk-width-3-5@s two-images__top-img">
-            <img src="images/two_images_left.jpg" class="img--big-shadow " alt="">
+            <img uk-scrollspy="cls: uk-animation-slide-left; delay: 500;" src="images/two_images_left.jpg" class="img--big-shadow " alt="">
           </div>
-          <div class="uk-width-2-5@s two-images__heading">
+          <div uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 500;" class="uk-width-2-5@s two-images__heading">
             <h3>Timeless Beauty Converted
               <br>Into Modern Day Living </h3>
             <hr class="uk-divider-small uk-margin-xlarge-bottom">
@@ -160,10 +159,10 @@
         </div>
         <div class="uk-grid  two-images__bottom-row" uk-grid>
           <div class="uk-width-2-5@s two-images__btn">
-            <a href="gallery.html" class="btn btn--default uk-margin-xlarge-top ">Watch gallery</a>
+            <a uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 500;" href="gallery.html" class="btn btn--default uk-margin-xlarge-top ">Watch gallery</a>
           </div>
           <div class="uk-width-3-5@s two-images__bottom-img">
-            <img src="images/two_images_right.jpg" class="img--big-shadow " alt="">
+            <img uk-scrollspy="cls: uk-animation-slide-right; delay: 500;" src="images/two_images_right.jpg" class="img--big-shadow " alt="">
           </div>
         </div>
       </div>
@@ -175,7 +174,7 @@
   <section class="bespoke">
     <div class="uk-section-xlarge uk-section-muted">
       <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+        <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: > div ; delay: 500;">
           <div>
             <h3>Why Bespoke?</h3>
             <hr class="uk-divider-small">
@@ -221,7 +220,7 @@
   <section class="contact">
     <div class="uk-section-xlarge uk-section-secondary">
       <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+        <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div ; delay: 500;">
           <div>
             <h4>Head Office</h4>
             <hr class="uk-divider-small">
@@ -285,7 +284,7 @@
   <!-- END! Contact -->
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" uk-scrollspy="cls: uk-animation-slide-bottom; target: > div ; delay: 300;">
     <div class="uk-section">
       <div class="uk-container">
         <div class="uk-grid" uk-grid>
