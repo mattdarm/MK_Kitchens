@@ -4,5 +4,26 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Document
+    title MK Modern Shaker Kitchens | Home
+
+    //- Main CSS
+    link(rel="stylesheet", href="styles/main.css")
+
+    //- UI Kit CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/css/uikit.min.css")
+
+    //- UI Kit JS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js")
+
   body
+    //- Mobile Menu - Navbar
+    #mobile-navbar.mobile-navbar.uk-sticky(class="uk-hidden@m" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu")
+      nav.uk-navbar.uk-navbar-container
+        div.uk-navbar-left
+         a(href="index.html" class="uk-navbar-item uk-logo")
+          img(class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens")
+        div.uk-navbar-right
+          button(class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu")
+            span(class="uk-margin-small-right" uk-icon="icon: table") Menu
+    //- END! Mobile Menu - Navbar -->

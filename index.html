@@ -4,7 +4,20 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>MK Modern Shaker Kitchens | Home</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="mobile-navbar uk-sticky uk-hidden@m" id="mobile-navbar" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu">
+      <nav class="uk-navbar uk-navbar-container">
+        <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="index.html"><img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens"/></a></div>
+        <div class="uk-navbar-right">
+          <button class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu"><span class="uk-margin-small-right" uk-icon="icon: table">Menu</span></button>
+        </div>
+      </nav>
+    </div>
+  </body>
 </html>
