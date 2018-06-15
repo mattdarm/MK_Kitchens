@@ -27,3 +27,31 @@ html(lang="en")
           button(class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu")
             span(class="uk-margin-small-right" uk-icon="icon: table") Menu
     //- END! Mobile Menu - Navbar -->
+
+    //- Mobile Menu - Window
+    div(id="modal-mobile-menu" class="mobile-menu uk-modal-full" uk-modal="sel-close; uk-modal-close")
+    div(class="uk-modal-dialog uk-modal-body uk-section-secondary uk-flex" uk-height-viewport)
+      button(class="uk-modal-close-default" type="button" uk-close)
+        nav
+          div(class="uk-flex uk-flex-column")
+            ul(class="uk-nav uk-nav-center uk-nav-primary uk-margin-auto-vertical")
+              li
+                a(href="index.html" class="uk-margin-top nav__menu-links") Home
+              li
+                a(href="gallery.html" class="nav__menu-links") Gallery
+              li
+                a(href="about-us.html" class="nav__menu-links") About us
+              li
+                a(href="contact.html" class=" uk-margin-bottom nav__menu-links") Contact
+              li(class="uk-nav-divider")
+              ul(class="uk-nav-sub uk-text-left")
+                li
+                  a(href="tel:+487846115968")
+                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="receiver") 78 46 115 968
+                li
+                  a(href="mailto:info@modernshakerkitchen.co.uk")
+                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="mail") info@modernshakerkitchen.co.uk
+                li
+                  a(href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank")
+                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="facebook") MK Modern Shaker Kitchen
+    //- END! Mobile Menu - Window
