@@ -17,71 +17,17 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js")
 
   body
-    //- Mobile Menu - Navbar
-    div#mobile-navbar.mobile-navbar.uk-sticky(class="uk-hidden@m" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu")
-      nav.uk-navbar.uk-navbar-container
-        div.uk-navbar-left
-         a(href="index.html" class="uk-navbar-item uk-logo")
-          img(class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens")
-        div.uk-navbar-right
-          button(class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu")
-            span(class="uk-margin-small-right" uk-icon="icon: table") Menu
-    //- END! Mobile Menu - Navbar -->
+    include web_parts/header.pug
 
-    //- Mobile Menu - Window
-    div(id="modal-mobile-menu" class="mobile-menu uk-modal-full" uk-modal="sel-close; uk-modal-close")
-    div(class="uk-modal-dialog uk-modal-body uk-section-secondary uk-flex" uk-height-viewport)
-      button(class="uk-modal-close-default" type="button" uk-close)
-        nav
-          div(class="uk-flex uk-flex-column")
-            ul(class="uk-nav uk-nav-center uk-nav-primary uk-margin-auto-vertical")
-              li
-                a(href="index.html" class="uk-margin-top nav__menu-links") Home
-              li
-                a(href="gallery.html" class="nav__menu-links") Gallery
-              li
-                a(href="about-us.html" class="nav__menu-links") About us
-              li
-                a(href="contact.html" class=" uk-margin-bottom nav__menu-links") Contact
-              li(class="uk-nav-divider")
-              ul(class="uk-nav-sub uk-text-left")
-                li
-                  a(href="tel:+487846115968")
-                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="receiver") 78 46 115 968
-                li
-                  a(href="mailto:info@modernshakerkitchen.co.uk")
-                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="mail") info@modernshakerkitchen.co.uk
-                li
-                  a(href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank")
-                    span(class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="facebook") MK Modern Shaker Kitchen
-    //- END! Mobile Menu - Window
-
-    //- Desktop Menu
-    header(class="header uk-inline")
-      div(class="uk-overflow-hidden" uk-scrollspy="cls: uk-animation-fade;")
-        img(src="images/slider_modern_shaker_kitchen1.jpg" alt="" class="header__background uk-animation-kenburns")
-        div(class="uk-overlay-secondary uk-position-cover")
-          div(class="header__navbar uk-position-fixed uk-position-top")
-            div(class="uk-container")
-              nav(class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar)
-                div(class="uk-navbar-left")
-                  a(href="index.html" class="uk-navbar-item uk-logo")
-                    img(class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens")
-                div(class="uk-navbar-right")
-                  ul(class="uk-navbar-nav")
-                    li
-                      a(href="index.html" class="btn") Home
-                    li
-                      a(href="gallery.html" class="btn") Gallery
-                    li
-                      a(href="about-us.html" class="btn") About us
-                    li
-                      a(href="contact.html" class="btn") Contact
-                  </ul>
-          div(class="header__hero-section uk-position-center")
-            div(class="uk-section")
-              div(class="uk-container uk-text-center")
-                h2(uk-scrollspy="cls: uk-animation-slide-top; delay: 500;") Modern Shaker Style
-                hr(uk-scrollspy="cls: uk-animation-scale-up; delay: 500;" class="uk-divider-icon")
-                h2(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;") Bespoke Kitchens
-    //- END! Desktop Menu
+    //- Intro Section
+    section(class="intro")
+      div(class="uk-grid uk-child-width-1-2@s " uk-grid)
+        div(class="uk-section-primary uk-section-xlarge intro__content-col")
+          div(class="uk-margin-large-left uk-margin-large-right intro__content" uk-scrollspy="cls: uk-animation-slide-left; target: > ; delay: 700;")
+            h3 Modern Shaker Style
+            hr(class="uk-divider-small")
+            p Our modern shaker style kitchens are mhand crafted and made to measure to fit perfectly in any space and suit your needs. From practical and functional to modern and luxurious, all available and custom made for you.
+            a(href="about-us.html" class="btn btn--primary uk-margin-large-top") Read more
+        div(class="uk-inline intro__bcg-img uk-background-cover" style="background-image: url(images/modern_shaker_kitchen_intro.jpg);" uk-scrollspy="cls: uk-animation-fade; delay: 500;")
+          div(class="uk-overlay-secondary uk-position-cover")
+    //- END! Intro Section
