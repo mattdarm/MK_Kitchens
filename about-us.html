@@ -1,279 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MK Modern Shaker Kitchens | Gallery</title>
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/main.css">
-
-  <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/css/uikit.min.css" />
-
-  <!-- UIkit JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js"></script>
-
-</head>
-
-<body>
-  <!-- Mobile Menu - Navbar -->
-  <div id="mobile-navbar" class="mobile-navbar uk-hidden@m uk-sticky" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>MK Modern Shaker Kitchens | Home</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="mobile-navbar uk-sticky uk-hidden@m" id="mobile-navbar" uk-sticky="animation: uk-animation-slide-top;show-on-up: true;cls-active: stycky-menu">
       <nav class="uk-navbar uk-navbar-container">
-        <div class="uk-navbar-left">
-          <a href="index.html" class="uk-navbar-item uk-logo">
-            <img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens">
-          </a>
-        </div>
+        <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="index.html"></a><img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens"/></div>
         <div class="uk-navbar-right">
-          <button class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu">
-            <span class="uk-margin-small-right" uk-icon="icon: table"></span>Menu</button>
+          <button class="mobile-navbar__btn uk-margin-small-right" type="button" uk-toggle="target: #modal-mobile-menu"><span class="uk-margin-small-right" uk-icon="icon: table">Menu</span></button>
         </div>
       </nav>
     </div>
-    <!-- END! Mobile Menu - Navbar -->
-  
-    <!-- Mobile Menu - Window -->
-    <div id="modal-mobile-menu" class="mobile-menu uk-modal-full" uk-modal="sel-close; uk-modal-close">
-      <div class="uk-modal-dialog uk-modal-body uk-section-secondary uk-flex" uk-height-viewport>
-        <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="mobile-menu uk-modal-full" id="modal-mobile-menu" uk-modal="sel-close; uk-modal-close">
+      <div class="uk-modal-dialog uk-modal-body uk-section-secondary uk-flex" uk-height-viewport="uk-height-viewport">
+        <button class="uk-modal-close-default" type="button" uk-close="uk-close"></button>
         <nav>
           <div class="uk-flex uk-flex-column">
             <ul class="uk-nav uk-nav-center uk-nav-primary uk-margin-auto-vertical">
-              <li>
-                <a href="index.html" class="uk-margin-top nav__menu-links">Home</a>
-              </li>
-              <li>
-                <a href="gallery.html" class="nav__menu-links">Gallery</a>
-              </li>
-              <li>
-                <a href="about-us.html" class="nav__menu-links">About us</a>
-              </li>
-              <li>
-                <a href="contact.html" class=" uk-margin-bottom nav__menu-links">Contact</a>
-              </li>
+              <li><a class="uk-margin-top nav__menu-links" href="index.html">Home</a></li>
+              <li><a class="nav__menu-links" href="gallery.html">Gallery</a></li>
+              <li><a class="nav__menu-links" href="about-us.html">About us</a></li>
+              <li><a class=" uk-margin-bottom nav__menu-links" href="contact.html">Contact</a></li>
               <li class="uk-nav-divider"></li>
               <ul class="uk-nav-sub uk-text-left">
-                <li>
-                  <a href="tel:+487846115968">
-                    <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="receiver"></span> 78 46 115 968</a>
-                </li>
-                <li>
-                  <a href="mailto:info@modernshakerkitchen.co.uk">
-                    <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="mail"></span> info@modernshakerkitchen.co.uk</a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank">
-                    <span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="facebook"></span> MK Modern Shaker Kitchen</a>
-                </li>
+                <li><a href="tel:+487846115968"><span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="receiver"></span> 78 46 115 968</a></li>
+                <li><a href="mailto:info@modernshakerkitchen.co.uk"><span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="mail"></span> info@modernshakerkitchen.co.uk</a></li>
+                <li><a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank"><span class="uk-margin-small-right uk-margin-small-bottom uk-icon-button" uk-icon="facebook"></span> MK Modern Shaker Kitchen</a></li>
               </ul>
             </ul>
           </div>
         </nav>
       </div>
     </div>
-    <!-- END! Mobile Menu - Window -->
-    
-  <!-- Desktop Menu -->
-  <header class="header header--no-home uk-inline">
-    <div class="uk-overflow-hidden">
-      <img src="images/about_us.jpg" alt="" class="header__background header__background--no-home">
-    </div>
-    <div>
-      <div class="uk-overlay-secondary uk-position-cover">
-        <div class="header__navbar uk-position-fixed uk-position-top">
-          <div class="uk-container">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-              <div class="uk-navbar-left">
-                <a href="index.html" class="uk-navbar-item uk-logo">
-                  <img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens">
-                </a>
-              </div>
-              <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                  <li>
-                    <a href="index.html" class="btn">Home</a>
-                  </li>
-                  <li>
-                    <a href="gallery.html" class="btn">Gallery</a>
-                  </li>
-                  <li>
-                    <a href="about-us.html" class="btn">About us</a>
-                  </li>
-                  <li>
-                    <a href="contact.html" class="btn">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+    <header class="header uk-inline">
+      <div class="uk-overflow-hidden" uk-scrollspy="cls: uk-animation-fade;"><img class="header__background uk-animation-kenburns" src="images/slider_modern_shaker_kitchen1.jpg" alt=""/>
+        <div class="uk-overlay-secondary uk-position-cover">
+          <div class="header__navbar uk-position-fixed uk-position-top">
+            <div class="uk-container">
+              <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar="uk-navbar">
+                <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="index.html"><img class="header__logo uk-preserve-width" src="images/MK_victorian_logo_dark_blue.png" alt="Logotype MK Modern Shaker Kitchens"/></a></div>
+                <div class="uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                    <li><a class="btn" href="index.html">Home</a></li>
+                    <li><a class="btn" href="gallery.html">Gallery</a></li>
+                    <li><a class="btn" href="about-us.html">About us</a></li>
+                    <li><a class="btn" href="contact.html">Contact</a></li>
+                  </ul></ul>
+                </div>
+              </nav>
+            </div>
           </div>
-        </div>
-        <div class="header__hero-section header__hero-section--no-home uk-position-bottom">
-          <div class="uk-section">
-            <div class="uk-container uk-text-center">
-              <h2>About us</h2>
-              <hr class="uk-divider-icon">
+          <div class="header__hero-section uk-position-center">
+            <div class="uk-section">
+              <div class="uk-container uk-text-center">
+                <h2 uk-scrollspy="cls: uk-animation-slide-top; delay: 500;">Modern Shaker Style</h2>
+                <hr class="uk-divider-icon" uk-scrollspy="cls: uk-animation-scale-up; delay: 500;"/>
+                <h2 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;">Bespoke Kitchens</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </header>
-  <!-- END! Desktop Menu -->
-
-  <!-- Experience -->
-  <section class="experience">
-    <div class="uk-section-xlarge uk-section-default">
-      <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid>
-          <div>
-            <h3>Experience</h3>
-            <hr class="uk-divider-small uk-margin-large-bottom">
-            <p>We are local company, iwth over 20 years of experience in joinery and carpentry work. We are based close to Heathrow,
-              covering 30 miles area around.</p>
-            <a href="contact.html" class="btn btn--default uk-margin-large-top">See google map</a>
-          </div>
-          <div>
-            <img class="img--big-shadow uk-float-right" src="images/about_us_1.jpg" alt="">
+    </header>
+    <section class="experience">
+      <div class="uk-section-xlarge uk-section-default">
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid="uk-grid">
+            <div>
+              <h3>Experience</h3>
+              <hr class="uk-divider-small uk-margin-large-bottom"/>
+              <p>We are local company, iwth over 20 years of experience in joinery and carpentry work. We are based close to Heathrow, covering 30 miles area around.</p><a class="btn btn--default uk-margin-large-top" href="contact.html">See google map</a>
+            </div>
+            <div><img class="img--big-shadow uk-float-right" src="images/about_us_1.jpg" alt=""/></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- END! Experience -->
-
-  <!-- How we work? -->
-  <section class="how-we-work">
-    <div class="uk-section-xlarge uk-section-primary">
-      <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid>
-          <div>
-            <img class="img--big-shadow" src="images/about_us_2.jpg" alt="">
-          </div>
-          <div>
-            <h3>How we work?</h3>
-            <hr class="uk-divider-small uk-margin-large-bottom">
-            <p>Our kitchens have the unique style, modern twist on a timeless classic shaker kitchens. We will come and measure
-              your kitchen, listen to your ideas and needs, and will design a kitchen that will be a comfortable, practical
-              and at the same time luxurious and modern.</p>
-            <a href="gallery.html" class="btn btn--primary uk-margin-large-top">Watch gallery</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END! Experience -->
-
-  <!-- Experience -->
-  <section class="suits-you">
-    <div class="uk-section-xlarge uk-section-muted">
-      <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid>
-          <div>
-            <h3>Our kitchen will suits you!</h3>
-            <hr class="uk-divider-small uk-margin-large-bottom">
-            <p>Made to measure means that the cabinets and units will fit perfectly in the space, nothing is prefabricated. From your choice of materials and colours (granit or marble)?, we will create your dream kitchen which will last for years to come.</p>
-            <a href="contact.html" class="btn btn--default uk-margin-large-top">any questions?</a>
-          </div>
-          <div>
-            <img class="img--big-shadow uk-float-right" src="images/about_us_3.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END! Experience -->
-
-  <!-- Contact -->
-  <section class="contact">
-    <div class="uk-section-xlarge uk-section-secondary">
-      <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-4" uk-grid>
-          <div>
-            <h4>Head Office</h4>
-            <hr class="uk-divider-small">
-            <div class="uk-grid-small" uk-grid>
-              <div class="uk-width-auto">
-                <span href="" class="uk-icon-button" uk-icon="home"></span>
-              </div>
-              <div class="uk-width-expand">
-                <address>
-                  57 Kingsway,
-                  <br> TW197QF,
-                  <br> Stanwell, Staines
-                </address>
-              </div>
+    </section>
+    <section class="how-we-work">
+      <div class="uk-section-xlarge uk-section-primary">
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid="uk-grid">
+            <div><img class="img--big-shadow" src="images/about_us_2.jpg" alt=""/></div>
+            <div>
+              <h3>How we work?</h3>
+              <hr class="uk-divider-small uk-margin-large-bottom"/>
+              <p>Our kitchens have the unique style, modern twist on a timeless classic shaker kitchens. We will come and measure your kitchen, listen to your ideas and needs, and will design a kitchen that will be a comfortable, practical and at the same time luxurious and modern.</p></p><a class="btn btn--primary uk-margin-large-top" href="gallery.html">Watch gallery</a>
             </div>
           </div>
-          <div>
-            <h4>Contact</h4>
-            <hr class="uk-divider-small">
-            <div class="uk-grid-small" uk-grid>
-              <div class="uk-width-auto">
-                <span href="" class="uk-icon-button" uk-icon="mail"></span>
-              </div>
-              <div class="uk-width-expand">
-                <a href="">info@modernshaker
-                  <br>kitchen.co.uk</a>
-              </div>
+        </div>
+      </div>
+    </section>
+    <section class="suits-you">
+      <div class="uk-section-xlarge uk-section-muted">
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-large uk-child-width-1-2" uk-grid="uk-grid">
+            <div>
+              <h3>Our kitchen will suits you!</h3>
+              <hr class="uk-divider-small uk-margin-large-bottom"/>
+              <p>Made to measure means that the cabinets and units will fit perfectly in the space, nothing is prefabricated. From your choice of materials and colours (granit or marble)?, we will create your dream kitchen which will last for years to come.</p><a class="btn btn--default uk-margin-large-top" href="contact.html">any questions?</a>
             </div>
-            <div class="uk-grid-small" uk-grid>
-              <div class="uk-width-auto">
-                <span href="" class="uk-icon-button" uk-icon="receiver"></span>
-              </div>
-              <div class="uk-width-expand">
-                <a href="tel:+487846115968">78 46 115 968</a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4>Social Media</h4>
-            <hr class="uk-divider-small">
-            <div class="uk-grid-small" uk-grid>
-              <div class="uk-width-auto">
-                <span href="" class="uk-icon-button" uk-icon="facebook"></span>
-              </div>
-              <div class="uk-width-expand">
-                <a href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank">MK Modern Shaker Kitchen</a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4>Search</h4>
-            <hr class="uk-divider-small">
-            <form action="" class="uk-form">
-              <input type="text" class="uk-input">
-            </form>
+            <div><img class="img--big-shadow uk-float-right" src="images/about_us_3.jpg" alt=""/></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- END! Contact -->
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-grid" uk-grid>
-          <div class="uk-width-expand">
-            <span>Modern Shaker Kitchens - 2018 |
-              <a href="#">Terms And Conditions</a>
-            </span>
-          </div>
-          <div class="uk-width-auto uk-text-right">
-            <span>
-              <a href="#">Code & Design By MD</a>
-            </span>
+    </section>
+    <section class="contact">
+      <div class="uk-section-xlarge uk-section-secondary">
+        <div class="uk-container">
+          <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid="uk-grid" uk-scrollspy="cls: uk-animation-scale-up; target: &gt; div ; delay: 500;">
+            <div>
+              <h4>Head Office</h4>
+              <hr class="uk-divider-small"/>
+              <div class="uk-grid-small" uk-grid="uk-grid">
+                <div class="uk-width-auto"><span class="uk-icon-button" href="" uk-icon="home"></span></div>
+                <div class="uk-width-expand">
+                  <address>
+                    57 Kingsway,<br> TW197QF,
+<br> Stanwell, Staines
+                  </address>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <hr class="uk-divider-small"/>
+              <div class="uk-grid-small" uk-grid="uk-grid">
+                <div class="uk-width-auto"><span class="uk-icon-button" href="" uk-icon="mail"></span></div>
+                <div class="uk-width-expand"><a class="uk-button-text" href="mailto:info@modernshakerkitchen.co.uk">info@modernshaker<br>kitchen.co.uk</a></div>
+              </div>
+              <div class="uk-grid-small" uk-grid="uk-grid">
+                <div class="uk-width-auto"><span class="uk-icon-button" href="" uk-icon="receiver"></span></div>
+                <div class="uk-width-expand"><a class="uk-button-text" href="tel:+487846115968">78 46 115 968</a></div>
+              </div>
+            </div>
+            <div>
+              <h4>Social Media</h4>
+              <hr class="uk-divider-small"/>
+              <div class="uk-grid-small" uk-grid="uk-grid">
+                <div class="uk-width-auto"><span class="uk-icon-button" href="" uk-icon="facebook"></span></div>
+                <div class="uk-width-expand"><a class="uk-button-text" href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank">MK Modern Shaker Kitchen</a></div>
+              </div>
+            </div>
+            <div>
+              <h4>Search</h4>
+              <hr class="uk-divider-small"/>
+              <form class="uk-form" action="">
+                <input class="uk-input" type="text"/>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- END! Footer -->
-
-</body>
-
+    </section>
+    <footer class="footer" uk-scrollspy="cls: uk-animation-slide-bottom; target: &gt; div ; delay: 300;">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-grid" uk-grid="uk-grid">
+            <div class="uk-width-expand"><span>Modern Shaker Kitchens - 2018 |<a class="uk-button-text" href="#"> Terms And Conditions</a></span></div>
+            <div class="uk-width-auto uk-text-right"><span><a class="uk-button-text" href="#">Code & Design By MD</a></span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
