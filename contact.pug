@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title MK Modern Shaker Kitchens | Home
+
+    //- Main CSS
+    link(rel="stylesheet", href="styles/main.css")
+
+    //- UI Kit CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/css/uikit.min.css")
+
+    //- UI Kit JS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.1/js/uikit-icons.min.js")
+
+  body
+    include web_parts/header.pug
+    //- Contact Us
+    section(class="contact-us")
+      div(class="uk-section-xlarge uk-section-default")
+        div(class="uk-container")
+          div(class="uk-grid uk-grid-small" uk-grid)
+            div(class="uk-width-1-3")
+              h3 Contact us
+              hr(class="uk-divider-small uk-margin-large-bottom")
+              p Please call or e-mail us to arrange the meeting for free consultation.
+              div(class="uk-grid-small uk-margin-large-top" uk-grid)
+                div(class="uk-width-auto")
+                  span(href="" class="uk-icon-button" uk-icon="home")
+                div(class="uk-width-expand")
+                  address 57 Kingsway,<br> TW197QF, Stanwell, Staines
+              div(class="uk-grid-small" uk-grid)
+                div(class="uk-width-auto")
+                  span(href="" class="uk-icon-button" uk-icon="mail")
+                div(class="uk-width-expand")
+                  a(href="" class="uk-button-text btn--link") info@modernshakerkitchen.co.uk
+              div(class="uk-grid-small" uk-grid)
+                div(class="uk-width-auto")
+                  span(href="" class="uk-icon-button" uk-icon="receiver")
+                div(class="uk-width-expand")
+                  a(href="tel:+487846115968" class="btn--link uk-button-text") 78 46 115 968
+              div(class="uk-grid-small" uk-grid)
+                div(class="uk-width-auto")
+                  span(href="" class="uk-icon-button" uk-icon="facebook")
+                div(class="uk-width-expand")
+                  a(href="https://www.facebook.com/MK-Modern-Shaker-Kitchen-239144040158507/" target="_blank" class="btn--link uk-button-text") MK Modern Shaker Kitchen
+            div(class="uk-width-2-3")
+              img(class="img--big-shadow uk-float-right" src="images/google_map.jpg" alt="")
+    //- END! Contact Us
+
+    //- Contact Form
+    section(class="contact-form")
+      div(class="uk-section-xlarge uk-section-default uk-section-xlarge--remove-padding-top")
+        div(class="uk-container uk-container-small")
+          div(class="uk-card uk-card uk-card-primary uk-padding")
+            h3 Contact Us
+            hr(class="uk-divider-small")
+            form(action="" class="uk-form-stacked")
+              div(class="uk-grid" uk-grid)
+                div(class="uk-width-1-2")
+                  label(class="uk-form-label" for="firstName") FIRST NAME*
+                  div(class="uk-form-controls")
+                    input(class="uk-input" type="text" required)
+                div(class="uk-width-1-2")
+                  label(class="uk-form-label" for="lastName") LAST NAME*
+                  div(class="uk-form-controls")
+                    input(class="uk-input" type="text" required)
+                div(class="uk-width-1-2")
+                  label(class="uk-form-label" for="firstName") E-MAIL*
+                  div(class="uk-form-controls")
+                    input(class="uk-input" type="email" required)
+                div(class="uk-width-1-2")
+                  label(class="uk-form-label" for="lastName") PHONE NUMBER
+                  div(class="uk-form-controls")
+                    input(class="uk-input" type="text")
+                div(class="uk-width-1-1")
+                    label(class="uk-form-label" for="lastName") MESSAGE
+                    div(class="uk-form-controls")
+                      textarea(class="uk-textarea") 
+                div(class="uk-width-1-1")
+                    input(class="btn btn-default btn-submit" type="submit" placeholder="SEND")
+    //- END! Contact Form -->
+    include web_parts/footer.pug
